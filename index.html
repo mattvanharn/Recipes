@@ -6,13 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matt's Favorite Recipes</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .recipe-text {
+      position: absolute;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      bottom: 10px;
+      left: 10px;
+      text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+    }
+
+    .recipe-background {
+      position: relative;
+    }
+
+    .recipe-image {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
   <h1>
     Matt's Recipes
   </h1>
-  <a href="recipes/burrito-bowl.html" target="_blank">Burrito Bowl</a>
+  <div class="recipe-background">
+    <a href="recipes/burrito-bowl.html" target="_blank"><img class="recipe-image"
+        src="https://feelgoodfoodie.net/wp-content/uploads/2017/03/Chicken-Burrito-Bowl-08.jpg" alt="Burrito Bowl"></a>
+    <div class="recipe-text">Burrito Bowl</div>
+  </div>
+  </div>
 </body>
 
 </html>
